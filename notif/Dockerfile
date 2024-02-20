@@ -13,5 +13,6 @@ FROM alpine
 COPY --from=builder /app/main /main
 
 EXPOSE 5672
+EXPOSE 15672
 
 CMD ["/main"]
